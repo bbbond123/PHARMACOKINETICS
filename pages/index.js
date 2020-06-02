@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchposts } from "../store/actions/postAction";
 import BarChart from "../components/BarChart";
+import XYPlot from "../components/XYPlot";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -15,14 +16,15 @@ export default function Home() {
 
   return (
     <div className="container">
-      <ul>
+      <XYPlot />
+      {/* <ul>
         {posts.map((item) => {
           return <li key={item}>{item}</li>;
         })}
       </ul>
       <div id="chart">
         <BarChart />
-      </div>
+      </div> */}
     </div>
   );
 }
