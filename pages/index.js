@@ -23,6 +23,7 @@ export default function Home() {
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <strong>{process.env.SECRET}</strong>
         {posts &&
           posts.map((item) => {
             return <h1 key={item}>{item}</h1>;
