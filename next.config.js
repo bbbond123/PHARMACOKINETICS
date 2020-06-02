@@ -6,5 +6,6 @@ console.log({
 module.exports = {
   env: {
     SECRET: process.env.SECRET,
+    APP: 'pharmacokinetics'
   },
 };
